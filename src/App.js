@@ -1,24 +1,21 @@
-//import logo from './logo.svg';
-import './App.css';
-import { Fireworks } from 'fireworks/lib/react'
-
+import React from 'react'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Main from './Main';
+import './App.css'
+import Greetings from './Greetings';
+import Login from './Login';
+import Mygreeting from './Mygreeting'
 function App() {
-  let fxProps = {
-    count: 3,
-    interval: 200,
-    colors: ['#cc3333', '#4CAF50', '#81C784'],
-    calc: (props, i) => ({
-      ...props,
-      x: (i + 1) * (window.innerWidth / 3) - (i + 1) * 100,
-      y: 200 + Math.random() * 100 - 50 + (i === 2 ? -80 : 0)
-    })
-  }
   return (
-    <div className="App">
-         <Fireworks {...fxProps} />
-          <h1>Congrats!</h1>
-    </div>
-  );
+      <Router>
+          <Switch>
+              <Route path="/code" exact component={Main}/>
+              <Route path="/greetings" component={Greetings}/>
+              <Route path="/login" component={Login}/>
+              <Route path="/mygreeting" component={Mygreeting}/>
+          </Switch>
+      </Router>
+    )
 }
 
-export default App;
+export default App
