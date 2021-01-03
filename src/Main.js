@@ -67,7 +67,7 @@ function Main() {
                 {showbtn &&
                     <>
                         <div className="animate__animated animate__flipInX animate__delay-4s">
-                        <a className={" btn btn-primary" } href="./greetings">Greetings --></a>
+                        <a className={" btn btn-primary" } href="/greetings">Greetings...</a>
                         </div>
                     </>
                 }

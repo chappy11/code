@@ -120,7 +120,7 @@ function Greetings() {
     return (
         <div>
             <div className="head2 animate__animated animate__lightSpeedInRight">
-                <a className="btn btn-success btngologin" href="./login">Login</a>
+                <a className="btn btn-success btngologin" href="/login">Login</a>
                 <div className={classn}>
                     <Cards data={data} isFlipped={isFlipped}/>
                 </div>
