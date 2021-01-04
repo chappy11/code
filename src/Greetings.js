@@ -8,7 +8,8 @@ import eme2 from './images/eme1.jpg';
 import aira1 from './images/aira.jpg';
 import aira2 from './images/aira1.jpg';
 import Cards from './Cards';
-
+import kahren1 from './images/kahren.jpg'
+import kahren2 from './images/kahren2.jpg'
 
 
 function Greetings() {
@@ -17,6 +18,7 @@ function Greetings() {
     const jayvie = "Hi han happiest birthday Guwang na jud ka hahahah. Bitaw han grabe jud nako ka thankful na nakaila taka. Bisan pa pila pa ta katuig na nagkaila sa imo rajud murag comfortable ko mo share (kahibaw naka ana hehe). Then karun kahibaw ko sud sa pila katuig unsa ka ka fighter, unsa pa daw to ato linyahan.. Everythings happen for a reason.. Saksi ko sa tanan nimo paghilak sa bhouse, kun unsa ka mahiubos kun unsa ka maglagot, kun unsa ka kasaputon haha sabot ra jud ko then gi mingaw sad ko kanang murag tag mga tanga na mang hilak sa bhouse. Permi mani nako isulti nimo pero ako na sad balikon ug sulti karun na happy kaayo ko nimo karun. Wala jud koy iba na ge wish nimo kundili be happy always. Love you hannaaa. Mya God bless you always. Amping ka always kamo tanan ara. Enjoy nalang sa imo adlaw labyou"
     const emelita = "Hanna! Happy Birthday Titikalagas na kita aww ako la ngayan hahah balitaw stay safe always pati imo family ngan patambok na ano pa ba ? Aaaay. ou ngayan baga glow up ka baya yana blooming pa kami san o pa daw hahahah miss you han nakakamiss geap tim pagiging saputon iton nakakalasan nala kami baga gud la deri geap ako sugad haha parehas ta nakakamiss geap imo oppo camera hahahaha permi puno pictures an im panlaba panhugas ha bhouse tim mga notes pag harapit na ang exam ngan tim expression pag kinikilig ka hahahah baa daw kay namamaso makarimadima gud hahahah sige amo la adto next year naman hahaha Happy Birthday Han Hoping to have more memories with you and others be happy and Godbless Lovelats ingats";
     const aira ="Hi Marieeee Mareng Mariee Happy Birthdayyy! Mapapasanaol ka nalang talaga. 33 ka na sanglit pakamaybout na. It sapot pang gagamba la dire pan Hanna haha nakakatawa yun grabeeee. Pero may wish ako para haim kay required ito. Hmm sana maging masaya ka with him ay chaar (maeffort baya SANAOLLL). Sana humataas ka na pagsul-ot la permi hit high-heeled nga sandals madali la iton an matingog gud pati it calculator maaringasa gihap ako tim wishes nga maka move on naak tas maging masaya na kan Lee Min Ho. Haha choss di ko ngayan birthday. Balit iday enjoy ur day. Pakain ka na lang pagkadto ta ha Tacloban pagkuha hit gamit. Ay oo ngayan graduate kan na han pagiging sanaol  ayiee che nakakabitter hahah Mahal kita mula noon hanggang ngayon ikaw ato ako.. Haayys napkulang-kulang it quarantine God bless Marie punta tayo sa Marie soon mwa";
+    const kahren ="To dear our hanna, makamingaw jud ba atong mga chika. Birthday na diay nimo ? Mutubo napud ka ani Bitaw han I wish you the best of everything love,career and life. I think okay naman ang love, career nalang ang ig focus Thank you for listening to my stories, both in love and life madarama jud ko ba, but you bear it well. HAHAHA. Anyways, I miss you and thank you for being in my life as a friend and classmate na magpasubad. Take care always and know how lucky you are to find a guy who would do this things in your special day. I wish I can find someone like that too. Alam mo na tanan nga ako nauyab may topak. Enjoy your day, Its togehter but I wish you all the best. Love you and Happy birthday";
     const message = [
         {
             id:1,
@@ -46,6 +48,13 @@ function Greetings() {
             message:aira,
             from:"Aira",
             pic2:aira2
+        },
+        {
+            id:5,
+            pic:kahren1,
+            message:kahren,
+            from:"Kahren",
+            pic2:kahren2
         }
     ] 
     const [flip, setflip] = useState(true);
@@ -66,7 +75,7 @@ function Greetings() {
         if(count===1){
             setshowbtn({btnprev:false,btnnext:true});
         }
-            else if(count===4){
+            else if(count===5){
             setshowbtn({btnprev:true,btnnext:false});
         }else{
             setshowbtn({btnnext:true,btnprev:true});
