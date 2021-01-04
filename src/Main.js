@@ -4,7 +4,7 @@ import pic3 from './images/pic3.png';
 import pic2 from './images/pic2.png';
 import pic4 from './images/pic4.png';
 
-function Main() {
+function Main({isgreet}) {
     let fxProps1 = {
     
         count: 1,
@@ -53,6 +53,9 @@ function Main() {
           setclass(anime);
              }, delay);
       } 
+      const igreet = () =>{
+          isgreet(true);
+      }
       
       return (
         <div className="App">
@@ -67,7 +70,7 @@ function Main() {
                 {showbtn &&
                     <>
                         <div className="animate__animated animate__flipInX animate__delay-4s">
-                        <a className={" btn btn-primary" } href="/greetings">Greetings...</a>
+                        <a className={" btn btn-primary" } onClick={igreet}>Greetings...</a>
                         </div>
                     </>
                 }
